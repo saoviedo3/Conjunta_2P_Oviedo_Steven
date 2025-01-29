@@ -1,0 +1,111 @@
+/* Asegura que la página llene todo el viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Estilo principal para la aplicación */
+  .content {
+    flex: 1;
+  }
+  
+  /* Estilo para el footer */
+  footer {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  /* Otros estilos opcionales */
+  .hero-section {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    color: #6c757d;
+  }
+  
+  .hero-section .btn-primary {
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+  }
+  
+
+/* Aplica el fondo a toda la página */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* Capa de opacidad */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajusta el nivel de opacidad aquí */
+  z-index: -1;
+}
+
+/* Ajustes del contenedor principal */
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+/* Estilos del footer para mantenerlo al final */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+table {
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+th, td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.page-title {
+  color: white;
+  text-align: center; /* Opcional: centra el texto */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Mejora la visibilidad sobre el fondo */
+}
+
